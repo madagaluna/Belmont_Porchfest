@@ -1,0 +1,95 @@
+<!-- registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+<body>
+    <h1>Performer Registration Form</h1>
+
+    <form id="registrationForm">
+        <!-- Performer Coordinator -->
+        <label for="coordinator">Performer Coordinator:</label>
+        <input type="text" id="coordinator" name="coordinator" required>
+
+        <!-- Contact Phone Number -->
+        <label for="phoneNumber">Contact Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required>
+
+        <!-- Email Address -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Type of Performance -->
+        <label for="performanceType">Type of Performance:</label>
+        <input type="text" id="performanceType" name="performanceType" required>
+
+        <!-- Performing Name -->
+        <label for="performingName">Performing Name:</label>
+        <input type="text" id="performingName" name="performingName" required>
+
+        <!-- Description -->
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4"></textarea>
+
+        <!-- Social Media -->
+        <label for="socialMedia">Social Media:</label>
+        <input type="text" id="socialMedia" name="socialMedia">
+
+        <!-- Other Media Link -->
+        <label for="otherMedia">Other Media Link:</label>
+        <input type="text" id="otherMedia" name="otherMedia">
+
+        <!-- Additional Links -->
+        <label for="additionalLinks">Additional Links:</label>
+        <input type="text" id="additionalLinks" name="additionalLinks">
+
+        <!-- How Loud are You? -->
+        <label for="loudness">How Loud are You?</label>
+        <select id="loudness" name="loudness">
+            <option value="0">Very Quiet</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">Very Loud</option>
+        </select>
+
+        <!-- Performance Address -->
+        <label for="performanceAddress">Performance Address:</label>
+        <input type="text" id="performanceAddress" name="performanceAddress" placeholder="Street Number and Name" required>
+
+        <!-- Start Time -->
+        <label for="startTime">Start Time:</label>
+        <select id="startTime" name="startTime">
+            <!-- Add your options for start time here -->
+        </select>
+
+        <!-- Performance Length -->
+        <label for="performanceLength">Performance Length (in minutes):</label>
+        <select id="performanceLength" name="performanceLength">
+            <option value="30">30 minutes</option>
+            <option value="60">60 minutes</option>
+            <option value="90">90 minutes</option>
+            <option value="120">120 minutes</option>
+        </select>
+
+        <!-- Upload Photo -->
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+
+        <!-- Belmont, MA 02478 -->
+        <label for="belmontAddress">Performance Location (Belmont, MA 02478 will be added):</label>
+        <input type="text" id="belmontAddress" name="belmontAddress" required disabled>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

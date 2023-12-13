@@ -1,0 +1,71 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 20px; /* Add margin to the body for overall spacing */
+}
+
+h1 {
+    color: #007bff;
+}
+
+form {
+    max-width: 600px; /* Adjust the maximum width of the form as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea,
+select,
+file {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+/* Adjust the styles of the submit button as needed */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Additional CSS for performers.html */
+.performer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.performer-card {
+    max-width: 300px;
+    margin: 16px;
+    text-align: center;
+}
+
+.performer-card img {
+    width: 100%;
+    height: auto;
+}
+
+.performer-card h2 {
+    font-weight: bold;
+}
+
+.performer-card h4 {
+    font-style: italic;
+}
