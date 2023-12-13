@@ -1,4 +1,3 @@
-<!-- registration.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,23 +39,15 @@
         <label for="socialMedia">Social Media:</label>
         <input type="text" id="socialMedia" name="socialMedia">
 
-        <!-- Other Media Link -->
-        <label for="otherMedia">Other Media Link:</label>
-        <input type="text" id="otherMedia" name="otherMedia">
-
-        <!-- Additional Links -->
-        <label for="additionalLinks">Additional Links:</label>
-        <input type="text" id="additionalLinks" name="additionalLinks">
-
         <!-- How Loud are You? -->
         <label for="loudness">How Loud are You?</label>
         <select id="loudness" name="loudness">
-            <option value="0">Very Quiet</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">Very Loud</option>
+
+            <option value="1">Unplugged strings</option>
+            <option value="2">Waking the baby</option>
+            <option value="3">lightly electric</option>
+            <option value="4">Unplugged horns</option>
+            <option value="5">Peeling the Paint</option>
         </select>
 
         <!-- Performance Address -->
@@ -66,7 +57,11 @@
         <!-- Start Time -->
         <label for="startTime">Start Time:</label>
         <select id="startTime" name="startTime">
-            <!-- Add your options for start time here -->
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="1:00 PM">1:00 PM</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="3:00 PM">3:00 PM</option>
+            <option value="4:00 PM">4:00 PM</option>
         </select>
 
         <!-- Performance Length -->
@@ -79,17 +74,16 @@
         </select>
 
         <!-- Upload Photo -->
-        <label for="photo">Upload Photo:</label>
-        <input type="file" id="photo" name="photo" accept="image/*">
+        <label for="photo">Upload Photo (Label your photo as "performing-name.jpg" AKA the-monkees.jpg):</label>
+        <input type="file" id="photo" accept=".jpg" required>
+        <p class="error-message" id="photoError"></p>
 
-        <!-- Belmont, MA 02478 -->
-        <label for="belmontAddress">Performance Location (Belmont, MA 02478 will be added):</label>
-        <input type="text" id="belmontAddress" name="belmontAddress" required disabled>
+
 
         <!-- Submit Button -->
         <input type="submit" value="Submit">
     </form>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

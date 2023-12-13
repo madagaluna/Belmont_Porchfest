@@ -1,41 +1,78 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Fetch the registration data and display performers
-    fetchAndDisplayPerformers();
 
-    // Add event listener for form submission
-    document.getElementById('registrationForm').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent default form submission behavior
+    const photoInput = document.getElementById('photo');
 
-        // Extract form data
-        const formData = {
-            // Retrieve form fields and their values
-        };
+    if (photoInput) {
+        photoInput.addEventListener('change', function () {
+            const allowedExtensions = /(\.jpg)$/i;
+            const errorElement = document.getElementById('photoError');
 
-        // Send the form data to the server or process it as needed
-        // Update data storage (e.g., registration.json or database)
+            if (!allowedExtensions.test(photoInput.value)) {
+                errorElement.textContent = 'Please upload a valid JPG file.';
+                photoInput.value = ''; // Clear the input to prevent submitting invalid data
+            } else {
+                errorElement.textContent = '';
+            }
+        });
+    }
 
-        // Optionally, redirect to performers page after successful submission
-        window.location.href = 'performers.html';
-    });
+    const registrationForm = document.getElementById('registrationForm');
+
+    if (registrationForm) {
+        registrationForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Extract form data
+            const formData = {
+                coordinator: document.getElementById('coordinator').value,
+                phoneNumber: document.getElementById('phoneNumber').value,
+                email: document.getElementById('email').value,
+                performanceType: document.getElementById('performanceType').value,
+                performingName: document.getElementById('performingName').value,
+                description: document.getElementById('description').value,
+                socialMedia: document.getElementById('socialMedia').value,
+                otherMedia: document.getElementById('otherMedia').value,
+                additionalLinks: document.getElementById('additionalLinks').value,
+                loudness: document.getElementById('loudness').value,
+                performanceAddress: document.getElementById('performanceAddress').value + ', Belmont Porchfest 02478',
+                startTime: document.getElementById('startTime').value,
+                performanceLength: document.getElementById('performanceLength').value,
+                // no photo, not sure how to handle this - server??
+            };
+
+            // upload separately?
+            const photoInput = document.getElementById('photo');
+            const photoFile = photoInput.files[0]; // <- This is the actual file object
+
+            // Fetch and display performers again to reflect the updated data
+            fetchAndDisplayPerformers();
+
+            // Redirect to performers page after successful submission
+            window.location.href = 'performers.html';
+        });
+    }
 
     // Function to fetch and display performers
     function fetchAndDisplayPerformers() {
-        // Fetch the registration data
+        // Fetch the updated registration data
         fetch('registration.json')
             .then(response => response.json())
             .then(data => {
-                // Get the performer container
-                const performerContainer = document.querySelector('.performer-container');
+                // Get all performer containers
+                const performerContainers = document.querySelectorAll('.performer-container');
 
-                // Loop through the data and create performer cards
-                data.forEach(performer => {
+                // Loop through the data and create performer cards for each container
+                performerContainers.forEach((container, index) => {
+                    // Assuming each container has a corresponding entry in the data array - this may not work cuz some fields are blank??? nvrmind, cleaned json.
+                    const performer = data[index];
+
                     // Create a performer card element
                     const performerCard = document.createElement('div');
                     performerCard.classList.add('performer-card');
 
                     // Create an image element
                     const img = document.createElement('img');
-                    img.src = `images/${performer.PerformingName.toLowerCase().replace(/\s+/g, '-')}.jpg`;
+                    img.src = `images/${performer.Image}`;
                     img.alt = performer.PerformingName;
                     performerCard.appendChild(img);
 
@@ -53,12 +90,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     performerCard.appendChild(h4);
 
                     // Append the performer card to the container
-                    performerContainer.appendChild(performerCard);
+                    container.appendChild(performerCard);
                 });
             })
             .catch(error => console.error('Error fetching registration data:', error));
     }
+
+    // Fetch and display performers initially
+    fetchAndDisplayPerformers();
 });
-
-
 
