@@ -4,67 +4,69 @@
     "Description": "Concert by The Berklee College of Music Professors who live in and around Belmont.",
     "SocialMedia": "www.johnbaboian.com",
     "PrearrangedAddress": "122 Cross St, Belmont, MA 02478",
-    "Image": "berklee-professors.jpg"
+    "Photo": "berklee-professors.jpg"
   },
   {
     "PerformingName": "En Route Jazz Quartet",
     "Description": "The EnRoute quartet is composed of 4 professional musicians, they perform music from Pat Metheny, John Scofield and original compositions.",
     "SocialMedia": "jeanmariecorrois.com",
     "PrearrangedAddress": "17 Sycamore Street, Belmont, MA 02478",
-    "Image": "en-route-jazz-quartet.jpg"
+    "Photo": "en-route-jazz-quartet.jpg"
   },
   {
     "PerformingName": "Box of Records",
     "Description": "Classic rock cover band that plays your favorite tunes from the 60s through today!",
     "SocialMedia": "https://www.facebook.com/BoxofRecordsBand?mibextid=LQQJ4d",
     "PrearrangedAddress": "6 Stella Rd, Belmont, MA 02478",
-    "Image": "box-of-records.jpg"
+    "Photo": "box-of-records.jpg"
   },
   {
     "PerformingName": "The Motown Band",
     "Description": "Playing the hits and pulse of Motown",
     "SocialMedia": "https://www.youtube.com/watch?v=xBk4zltyN2c&list=PLE6NlkF0BCY0mYQYPERIyfu4q27LPwA19&pp=gAQBiAQB",
     "PrearrangedAddress": "52 Washington Street, Belmont, MA 02478",
-    "Image": "motown-band.jpg"
+    "Photo": "motown-band.jpg"
   },
   {
     "PerformingName": "Business Goose",
     "Description": "Business Goose is a modern Jazz/Funk band based in New England. Drawing on artists from John Coltrane to Snarky Puppy, their music is one big melting pot of styles.",
     "SocialMedia": "https://www.youtube.com/watch?v=th8dCv5BJxM",
     "PrearrangedAddress": "116 Orchard Street, Belmont, MA 02478",
-    "Image": "business-goose.jpg"
+    "Photo": "business-goose.jpg"
   },
   {
     "PerformingName": "Summer Dads",
     "Description": "Summer Dads have lit the grill and promise cover songs for everyone, from medium rare to well done. Don't be late or you'll have to ketchup!",
     "SocialMedia": "https://www.youtube.com/watch?v=HwrPr3M0JkU",
     "PrearrangedAddress": "65 Kilburn Rd, Belmont, MA 02478",
-    "Image": "summer-dads.jpg"
+    "Photo": "summer-dads.jpg"
   },
   {
     "PerformingName": "Sarah Albright",
     "Description": "Just a gal and her guitar and some folk music. Special fiddle guest to perform.",
     "SocialMedia": "https://www.youtube.com/watch?v=ETLOVbTC1Bw&list=PLmxrtVowTqOxZrosgD6clK94dAOxt2zHy",
     "PrearrangedAddress": "24 Wiley Road, Belmont, MA 02478",
-    "Image": "sarah-albright.jpg"
+    "Photo": "sarah-albright.jpg"
   },
   {
     "PerformingName": "Bueller Bueller",
     "Description": "Blasting out songs from the 80's - nothing more, nothing less",
     "SocialMedia": "https://www.youtube.com/watch?v=9yJZZg9Shqw&list=PLE6NlkF0BCY2H3AjuTKrHQ3aJ6MULIMiG&pp=gAQBiAQB",
     "PrearrangedAddress": "52 Washington Street, Belmont, MA 02478",
-    "Image": "bueller-bueller.jpg"
+    "Photo": "bueller-bueller.jpg"
   },
     {
       "PerformingName": "Velmas Vibe",
       "Description": "Cover band covering classic to modern hits",
       "SocialMedia": null,
-      "PrearrangedAddress": "6 Stella Rd, Belmont, MA 02478"
+      "PrearrangedAddress": "6 Stella Rd, Belmont, MA 02478",
+      "Photo": "velmas-vibe.jpg"
     },
     {
       "PerformingName": "Music from Turkiye",
       "Description": "We will perform classical and folk music from Turkey with traditional Turkish music instruments",
       "SocialMedia": "volkanefe.com",
-      "PrearrangedAddress": "6 Gale Rd, Belmont, MA 02478"
+      "PrearrangedAddress": "6 Gale Rd, Belmont, MA 02478",
+      "Photo": "music-from-turkiye.jpg"
     }
 ]
